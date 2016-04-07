@@ -14,6 +14,7 @@ This Google Chrome extension allows you to navigate across files and packages on
 
 ![d](screencast.gif)
 
+For the latest updates follow [@octo_linker](https://twitter.com/octo_linker) on twitter.
 
 
 # Installation
