@@ -10,3 +10,7 @@ export function languageByFilePath(filepath) {
     }
   }
 }
+
+export function filePathByLanguage(language) {
+  return languages[language];
+}

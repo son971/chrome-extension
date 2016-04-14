@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { languageByFilePath } from './index.js';
+import { languageByFilePath, filePathByLanguage } from './index.js';
 
 describe('helper-file-type', () => {
   describe('returns type "JavaScript" when', () => {
@@ -39,6 +39,16 @@ describe('helper-file-type', () => {
 
     it('is called with foo/Gemfile', () => {
       assert.equal(languageByFilePath('foo/Gemfile'), 'Ruby');
+    });
+  });
+
+  describe('filePathByLanguage', () => {
+    it('is called with foo/Gemfile', () => {
+      assert.deepEqual(filePathByLanguage('JavaScript'), [
+        '.js',
+        '.jsx',
+        '.es6',
+      ]);
     });
   });
 });
